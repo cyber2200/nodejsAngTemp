@@ -13,7 +13,7 @@
 				</th>
 			</tr>
 		</thead>
-		<tr ng-repeat="entity in data">
+		<tr ng-repeat="entity in data | filter:{name : queryFilter}">
 			<td>
 				{{entity.name}}
 			</td>
@@ -27,3 +27,4 @@
 		</tr>
 	</table>
 </div>
+Filter: <input type="text" ng-model="queryFilter">
