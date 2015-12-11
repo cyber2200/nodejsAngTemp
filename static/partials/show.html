@@ -1,0 +1,29 @@
+<div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>
+					<span class="tableTitle">Name</span>
+				</th>
+				<th>
+					<span class="tableTitle">Type</span>
+				</th>
+				<th>
+			
+				</th>
+			</tr>
+		</thead>
+		<tr ng-repeat="entity in data">
+			<td>
+				{{entity.name}}
+			</td>
+			<td>
+				{{entity.type}}
+			</td>
+			<td>
+				<a href="" ng-click="edit(entity.id);">Edit</a>
+				<a href="" ng-click="delete(entity.id);">Delete</a>
+			</td>		
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,42 @@
+<form class="css-form" name="form" novalidate >
+	<div class="row">
+		<div class="col-md-1">
+			Name: 
+		</div>
+		<div class="col-md-4">
+			<input class="form-control" id="user-input" type="text" ng-model="user.name" autocomplete="off" name="uName" required/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+			Type: 
+		</div>
+		<div class="col-md-4">
+			<select class="form-control" ng-model="user.type">
+				<option value=""></option>
+				<option value="admin">Admin</option>
+				<option value="regular">Regular</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+				<input class="btn btn-default" ng-click="upsert(user);" type="submit">
+			</div>
+		</div>
+	</div>
+</form>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body" id="modalTxt">
+				
+			</div>
+		</div>
+	</div>
+</div>
